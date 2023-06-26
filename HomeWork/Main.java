@@ -1,7 +1,8 @@
 public class Main{
 	public static void main(String[] args){
 		User user = new User("Bob");
-		user.report();
-		user.save();
+		UserControl userControl = new UserControl(user);
+		userControl.report();
+		userControl.save();
 	}
 }
